@@ -1,0 +1,59 @@
+#email-address {
+  padding: 4rem 0;
+}
+#email-address form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h4 {
+    text-align: center;
+  }
+}
+#email-address .box-email {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1rem 0;
+  div {
+    margin: 1rem;
+    position: relative;
+  }
+}
+
+.box-email label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  left: 1rem;
+  transition: all .4s ease; 
+  background-color: black;
+}
+
+.box-email input {
+  background-color: black;
+  border: 1px solid #ccc;
+  height: 50px;
+  width: max(200px, 15vw + 100px);
+  border-radius: .25rem;
+  box-sizing: border-box;
+  padding: 0 .5rem;
+
+}
+
+.box-email input:focus + label, .box-email input:valid + label { 
+  @extend .email-active;
+}
+.email-active {
+  top: 0;
+  left: 0.5rem; 
+}
+
+.box-email button {
+  height: 50px;
+  width: 120px !important;
+}

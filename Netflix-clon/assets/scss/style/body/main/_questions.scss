@@ -1,0 +1,52 @@
+#questions {
+  box-sizing: border-box;
+  padding: 2rem 6rem; 
+}
+#questions h1 {
+   text-align: center; 
+}
+
+.box-card {
+  padding: 0; 
+}
+.box-card .card {
+  background-color: #2d2d2d; 
+  margin-bottom: 1rem;
+  .card a { 
+    background-color: #2d2d2d; 
+    color: #fff;
+  }
+  .card-header {
+    background-color: #2d2d2d;   
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    svg {
+      height: 2rem;
+      margin-right: 1rem;
+    }
+    &:hover {
+      background-color: #4e4e4e;
+    }
+    a {
+      color: #fff;
+      display: flex;
+      border: none;
+      font-size: clamp(1rem, 2vw, 2.5rem);
+    }
+    svg {
+      transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1); 
+    } 
+  }
+  .card-body {
+    background-color: #2d2d2d; 
+    p {
+      font-size: max(1rem, 1.8vw);
+    }
+  } 
+}
+
+.add-rotate {
+  transform: rotate(45deg); 
+}

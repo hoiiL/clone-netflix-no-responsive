@@ -1,0 +1,33 @@
+header {
+  background: url(/assets/img/R.jpg) no-repeat center; 
+  height: 100vh; 
+  background-size: cover; 
+  padding: 20px 8rem;  
+}
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgb(22, 22, 22), transparent 50%, rgb(22, 22, 22)); 
+}
+nav .container-fluid {
+  align-items: center;
+}
+#band {
+  height: 40px;  
+}
+#signbtn {
+  margin-left: 1rem;   
+}
+#language {
+  height: 36px;
+  width: 160px;
+  text-align: center;   
+  background-color: transparent;   
+}  
+#logo-language {
+  height: 20px;
+  position: absolute;
+  left: .5em; 
+  top: 50%;
+  transform: translateY(-50%); 
+}

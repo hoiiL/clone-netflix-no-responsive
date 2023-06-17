@@ -1,0 +1,40 @@
+footer > .container {
+  box-sizing: border-box;
+  padding: 2rem 6rem;
+
+  & a {
+    color: #fff;
+  }
+
+  .col-2 {
+    position: relative;
+  }
+  img {
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: .5rem;
+    transform: translateY(-50%);
+  }
+  .form-select {
+    background-color: transparent;
+    color: #fff; 
+    text-align: center;
+  }
+
+}
+
+footer .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin: .5rem 0;
+    }
+  }
+}

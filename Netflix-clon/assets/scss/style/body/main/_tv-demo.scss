@@ -1,0 +1,30 @@
+#tv-demo {
+  box-sizing: border-box; 
+  padding: 6rem; 
+
+  .row .col-6 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+    }
+    h2 {
+      font-size: max(1rem, 1vw);  
+    }
+
+    img {
+      transform: scale(.8); 
+    }
+    .tv-shadow {
+      height: 10px;
+      width: 100%;
+      border-radius: 100%;
+      box-shadow: 0 2px 2px 2px rgba(239, 246, 211, 0.5);
+    }
+
+  }
+
+}
